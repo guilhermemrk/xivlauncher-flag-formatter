@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XIVLauncher Flag Formatter</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./src/bootstrap.min.css" />
+        <link rel="stylesheet" href="./src/index.css" />
+        <script src="./src/jquery-3.5.1.min.js"></script>
+        <script src="./src/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>XIVLauncher Flag Formatter</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 mt-3 mx-3">
+                    <nav class="nav nav-pills flex-column flex-sm-row" id="nav-opts">
+                        <a class="text-sm-center nav-link border active mr-1" data-tab="flags-area" href="#">Flags</a>
+                        <a class="text-sm-center nav-link border mx-1" id="nav-result" data-tab="result-area" href="#">Result</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row tab-content flags-area">
+                <div class="col-sm-5 mt-3 mx-3">
+                    <div class="form-group">
+                        <label for="flags"><b>Flags</b> (one per line)</label>
+                        <textarea class="form-control" id="flags" rows="12"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 mx-3 my-1">
+                    <button type="submit" class="btn btn-primary mb-2" id="format-flags">Format</button>
+                </div>
+            </div>
+
+            <div class="row tab-content result-area">
+                <div class="col-sm-5 mt-3 mx-3">
+                    <div class="form-group">
+                        <label for="flags"><b>Results</b></label>
+                        <textarea class="form-control" id="results" rows="12"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./src/index.js"></script>
+    </body>
+</html>
