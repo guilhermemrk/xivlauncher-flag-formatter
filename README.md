@@ -1,5 +1,7 @@
 # xivlauncher-flag-formatter
 
+Flag formatter for xivlauncher.
+
 Turns this:
 ```
 Nuckelavee Lakeland ( 27.1  , 30.6 ) Z: 0.2
